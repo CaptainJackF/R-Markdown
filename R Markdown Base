@@ -1,0 +1,38 @@
+---
+title: "R Markdown & Shiny"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax which allows you to author HTML, PDF, and MS Word documents. For more details on how to use R Markdown, see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# This is Title
+*斜体？*
+**加粗？**
+** Below is hyperlinks **
+* [StackOverflow](www.baidu.com)
+不输出结果：
+```{r eval = FALSE}
+  dim( iris)
+```
+不显示代码：多用于做图
+```{r echo = FALSE}
+  dim( iris)
+```
